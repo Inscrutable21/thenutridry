@@ -1,11 +1,12 @@
 import './globals.css'
+import PropTypes from 'prop-types'
 
 export const metadata = {
   title: 'Under Construction',
   description: 'Our website is coming soon',
 }
 
-export default function UnderConstructionLayout({ children }) {
+function UnderConstructionLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <head />
@@ -15,3 +16,9 @@ export default function UnderConstructionLayout({ children }) {
     </html>
   );
 }
+
+UnderConstructionLayout.propTypes = {
+  children: PropTypes.node
+};
+
+export default UnderConstructionLayout;
